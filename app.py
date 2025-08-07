@@ -144,8 +144,8 @@ genai.configure(api_key="AIzaSyB2j0Sd5ekAdiaOlcOV7-sGKsJ2FHFis-Y")
 
 #This would help us know what models and call functions are available
 import google.generativeai as genai
-#genai.configure(api_key="AIzaSyB2j0Sd5ekAdiaOlcOV7-sGKsJ2FHFis-Y") amarachukwuemenike.2@gmail.com
-genai.configure(api_key="AIzaSyC8UxMokTT5y2Mivk1sDJIkxGafaIHOKO8")
+#genai.configure(API_KEY) amarachukwuemenike.2@gmail.com
+genai.configure(API_KEY)
 
 
 # models = genai.list_models()
@@ -160,10 +160,11 @@ import json
 import google.generativeai as genai
 
 # --- Hardcode your API Key Here --- Replace "YOUR_API_KEY_HERE" with your actual Google AI Studio API key. For amarachukwuemenike.2@gmail.com
-# API_KEY = "AIzaSyB2j0Sd5ekAdiaOlcOV7-sGKsJ2FHFis-Y"
-# YOUR_API_KEY_HERE = "AIzaSyB2j0Sd5ekAdiaOlcOV7-sGKsJ2FHFis-Y"
+#  load_dotenv()
+API_KEY = os.getenv("API_KEY") #plug in your API Key here
+# YOUR_API_KEY_HERE = os.getenv("API_KEY")
 
-API_KEY = "AIzaSyC8UxMokTT5y2Mivk1sDJIkxGafaIHOKO8" #amarachukwu@flutterwavego.com
+API_KEY = os.getenv("API_KEY") 
 
 # --- Configuration ---
 if API_KEY == "YOUR_API_KEY_HERE":
